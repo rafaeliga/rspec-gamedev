@@ -38,12 +38,9 @@ ActiveRecord::Schema.define(:version => 20120325031015) do
     t.string   "name"
     t.string   "type"
     t.string   "status"
-    t.integer  "level_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
-
-  add_index "items", ["level_id"], :name => "index_items_on_level_id"
 
   create_table "level_items", :force => true do |t|
     t.integer  "itemnable_id"

@@ -19,7 +19,7 @@ class Farmer < Character
     enemy.update_attribute(:life, 0)
   end
 
-  # item_type can be 'Corn', 'Life' and etc
+  # item_type can be 'Corn', 'Life', 'Timer' and etc
   def items_per level, item_type
     level_items.joins(:item).where(:level_id => level.id, :items => {:type => item_type})
   end

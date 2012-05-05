@@ -1,0 +1,2 @@
+class Timer < Item
+end

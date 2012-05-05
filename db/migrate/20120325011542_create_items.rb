@@ -4,10 +4,8 @@ class CreateItems < ActiveRecord::Migration
       t.string :name
       t.string :type
       t.string :status
-      t.references :level
 
       t.timestamps
     end
-    add_index :items, :level_id
   end
 end
